@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
+}
+
+.search {
+  background: whitesmoke;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-api {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3rem, 1rem, 4rem, 3rem;
+  margin: 1em;
+  border: solid green;
+  border-radius: 1rem;
+}
+
+.my-api * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.4em;
+}
+
+.my-api-name {
+  grid-column: 1 /-1;
+  font-weight: bold;
+  background: whitesmoke;
+}
+.my-api-description,
+.my-api-auth,
+.my-api-https {
+  grid-column: 1 / -1;
+  background-color: aqua;
+  font-size: 1.2rem;
+}
+
+.link {
+  color: green;
+  border: none;
+  text-decoration: none;
+}
